@@ -12,8 +12,8 @@ from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression  
 from sklearn.ensemble import RandomForestClassifier
 
-
-df = pd.read_csv("Student.csv")
+uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+df = pd.read_csv("upload_file")
 
 st.set_option("deprecation.showPyplotGlobalUse", False)
 
