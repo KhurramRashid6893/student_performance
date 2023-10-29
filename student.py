@@ -81,7 +81,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
 
 
 st.sidebar.write("----------------")
-if st.sidebar.button("Scaled DataFrame", type="primary"):
+if st.sidebar.button("Scaled DataFrame"):
   st.subheader("DataSet")
   st.write(X)
 st.sidebar.write("----------------")
@@ -89,7 +89,7 @@ st.sidebar.write("----------------")
 st.sidebar.title("Visualisation after prediction")
 #Linear Regression
 
-if st.sidebar.button("Linear Regression", type="primary"):
+if st.sidebar.button("Linear Regression"):
   st.title("Linear Regression")
 
   lr = LinearRegression()
@@ -123,7 +123,7 @@ if st.sidebar.button("Linear Regression", type="primary"):
 
 
 #SVC Model
-if st.sidebar.button("SVC", type="primary"):
+if st.sidebar.button("SVC"):
   st.title("Support vector Classifier")
 
   svc = SVC(kernel = 'linear')
@@ -156,7 +156,7 @@ if st.sidebar.button("SVC", type="primary"):
   st.pyplot()
 
 ##RandomForestClassifier
-if st.sidebar.button("RandomForestClassifier", type="primary"):
+if st.sidebar.button("RandomForestClassifier"):
   st.title("Random Forest Classifier")
   rf_clf = SVC(kernel = 'linear')
   rf_clf.fit(X_train, y_train)
@@ -188,7 +188,7 @@ if st.sidebar.button("RandomForestClassifier", type="primary"):
   st.pyplot()
 
 # Logistic Regression
-if st.sidebar.button("LogisticRegression", type="primary"):
+if st.sidebar.button("LogisticRegression"):
   st.title("LogisticRegression")
   lg = SVC(kernel = 'linear')
   lg.fit(X_train, y_train)
