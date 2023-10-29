@@ -25,7 +25,7 @@ st.markdown("<h2 style='text-align: center; color: green;'>Student Performance V
 
 
 st.sidebar.title("Student Data Visualisation")
-if st.sidebar.button('Display Raw data', type="primary"):
+if st.sidebar.button('Display Raw data'):
   st.subheader("Student Data Set", divider='rainbow')
   st.write(df)
   st.write("Number of Rows: ", df.shape[0])
