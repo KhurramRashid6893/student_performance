@@ -219,6 +219,7 @@ if st.sidebar.button("LogisticRegression"):
   plt.legend()
   plt.grid(True)
   st.pyplot()
+st.sidebar.title("By Khurram Rashid")
 
 
 
