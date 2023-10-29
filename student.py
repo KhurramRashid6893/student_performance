@@ -25,10 +25,10 @@ st.markdown("<h1 style='text-align: center; color: green;'>Student Performance V
 
 
 st.sidebar.title("Student Data Visualisation")
-k = st.sidebar.selectbox("Select: "("Display Raw Data", "Display Scaled Data"))
-if 'Display Raw data' in k:
+
+if st.sidebar.button('Display Raw data'):
   st.subheader("Student Data Set", divider='rainbow')
-  st.write(df)
+  st.dataframe(df)
   st.write("Number of Rows: ", df.shape[0])
   st.write("Number of Columns: ", df.shape[1])
 
@@ -82,9 +82,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
 
 
 st.sidebar.write("----------------")
-if "Scaled DataFrame" in k:
+if st.sidebar.button("Scaled DataFrame"):
   st.subheader("DataSet")
-  st.write(X)
+  st.dataframe(X)
 st.sidebar.write("----------------")
 
 st.sidebar.title("Visualisation after prediction")
