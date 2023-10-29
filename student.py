@@ -21,7 +21,7 @@ st.set_option("deprecation.showPyplotGlobalUse", False)
 
 st.markdown("<h1 style='text-align: center; color: red;'>Google Developer Student Clubs</h1>", unsafe_allow_html=True)
 
-st.markdown("<h2 style='text-align: center; color: green;'>Student Performance Visualisation Web App</h2>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: green;'>Student Performance Visualisation Web App</h1>", unsafe_allow_html=True)
 
 
 st.sidebar.title("Student Data Visualisation")
